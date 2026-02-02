@@ -64,8 +64,8 @@ Each source file includes comments explaining the algorithms and data structures
 
 ## Requirements
 
-- C++20 or later
-- CMake 4.0+
+- C++17 or later
+- CMake 3.14+
 - A C++ compiler (GCC, Clang, or MSVC)
 
 ## Purpose
