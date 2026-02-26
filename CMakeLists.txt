@@ -21,11 +21,13 @@ set(CMAKE_CXX_STANDARD 20)            # Enable C++20 standard
 
 # FetchContent_MakeAvailable(benchmark)
 
+find_package(sycl)
+
 # Define the benchmark executable
 add_executable(cpp_playground main.cpp)
 
 # Include headers
-target_include_directories(cpp_playground PRIVATE include)
+target_include_directories(cpp_playground PRIVATE include, sycl)
 
 # Link Google Benchmark
 #target_link_libraries(cpp_playground
