@@ -12,7 +12,6 @@
 template <typename T>
 class MyVector
 {
-private:
     T* data;
     size_t _size;
     size_t _capacity;
